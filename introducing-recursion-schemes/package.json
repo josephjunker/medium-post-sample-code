@@ -1,0 +1,23 @@
+{
+  "name": "",
+  "version": "1.0.0",
+  "private": true,
+  "description": "",
+  "main": "",
+  "scripts": {
+    "build": "babel src/ -d lib/",
+    "flow": "flow"
+  },
+  "dependencies": {
+    "flow-static-land": "^0.2.6"
+  },
+  "author": "Joseph Junker",
+  "license": "MIT",
+  "devDependencies": {
+    "babel-cli": "^6.24.1",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-flow": "^6.23.0",
+    "flow-bin": "^0.46.0",
+    "static-land-recursion-schemes": "^0.1.1"
+  }
+}
