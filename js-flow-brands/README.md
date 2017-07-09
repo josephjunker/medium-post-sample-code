@@ -1,2 +1,1 @@
-# js-flow-brands-post
-Code snippets from my "Higher-kinded polymorphism with JavaScript and Flow, in depth" post
+Code snippets from [this](https://medium.com/@JosephJnk/higher-kinded-polymorphism-with-javascript-and-flow-in-depth-da8d303b5854) post
