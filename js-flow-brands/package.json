@@ -1,0 +1,23 @@
+{
+  "name": "js-flow-brands-post",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Code snippets from my \"Higher-kinded polymorphism with JavaScript and Flow, in depth\" post",
+  "main": "lib/BinaryTree.js",
+  "scripts": {
+    "build": "babel src/ -d lib/",
+    "flow": "flow",
+    "start": "node lib/use-tree-as-functor.js"
+  },
+  "dependencies": {
+    "flow-static-land": "^0.2.6"
+  },
+  "author": "Joseph Junker",
+  "license": "MIT",
+  "devDependencies": {
+    "babel-cli": "^6.24.1",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-flow": "^6.23.0",
+    "flow-bin": "^0.46.0"
+  }
+}

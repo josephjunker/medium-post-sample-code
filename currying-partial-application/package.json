@@ -1,0 +1,22 @@
+{
+  "name": "currying-partial-application-post",
+  "version": "1.0.0",
+  "private": true,
+  "main": "lib/all-runnable-code.js",
+  "scripts": {
+    "build": "babel src/ -d lib/",
+    "flow": "flow",
+    "start": "node lib/all-runnable-code.js"
+  },
+  "dependencies": {},
+  "author": "Joseph Junker",
+  "license": "MIT",
+  "devDependencies": {
+    "babel-cli": "^6.24.1",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-flow": "^6.23.0",
+    "chai": "^4.0.2",
+    "flow-bin": "^0.46.0",
+    "mocha": "^3.4.2"
+  }
+}
