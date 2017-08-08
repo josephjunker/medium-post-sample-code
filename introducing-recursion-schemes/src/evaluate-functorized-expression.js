@@ -19,7 +19,7 @@ function _evalExpr (expression: ExprF<number>) : number {
   : /* ex is a Num     */ ex.value);
 }
 
-const evalExpr : Expr => number = ex => cata(_evalExpr, ex, exprFunctor);
+const evalExpr : Expr => number = ex => cata(exprFunctor, _evalExpr, ex);
 
 
 // AST for 2 * (1 + 1) * 4 * 3

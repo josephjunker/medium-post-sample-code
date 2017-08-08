@@ -7,7 +7,7 @@ import { In, out } from "static-land-recursion-schemes/lib/Fix";
 import type { ExprF, Expr } from "./functorized-expression-ast";
 import {
   Plus, Times, Paren, Num,
-  exprFunctor, inj, prj, times,
+  exprFunctor, prj, times,
   paren, num, plus
 } from "./functorized-expression-ast";
 
@@ -40,15 +40,17 @@ const flatten = ex => cata(exprFunctor,
     return ex instanceof Paren ? ex.contents : new In(expression);
   }, ex);
 
-const prettyPrint = ex => cata(exprFunctor,
-  function (expression: ExprF<string>) : string {
-    const ex = prj(expression);
-    return (
-      ex instanceof Plus  ? `${ex.left} + ${ex.right}`
-    : ex instanceof Times ? `${ex.left} * ${ex.right}`
-    : ex instanceof Paren ? `(${ex.contents})`
-    : /* ex is a Num     */ String(ex.value));
-  }, ex);
+function prettyPrint(ex: Expr) : string {
+  return cata(exprFunctor,
+    function (expression: ExprF<string>) : string {
+      const ex = prj(expression);
+      return (
+        ex instanceof Plus  ? `${ex.left} + ${ex.right}`
+      : ex instanceof Times ? `${ex.left} * ${ex.right}`
+      : ex instanceof Paren ? `(${ex.contents})`
+      : /* ex is a Num     */ String(ex.value));
+    }, ex);
+}
 
 const addNecessaryParens = ex => cata(exprFunctor,
   function (expression: ExprF<Expr>) : Expr {
