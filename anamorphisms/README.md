@@ -1,1 +1,1 @@
-Code samples from [this](https://medium.com/@JosephJnk/catamorphisms-8637f3d45383) post. All contents of the `src` directory are placed into the public domain under the [CC0 license](https://creativecommons.org/share-your-work/public-domain/cc0/).
+Code samples from [this](https://medium.com/@JosephJnk/anamorphisms-9a85466c9d59) post. All contents of the `src` directory are placed into the public domain under the [CC0 license](https://creativecommons.org/share-your-work/public-domain/cc0/).
