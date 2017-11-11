@@ -1,0 +1,1 @@
+Code samples from [this](https://medium.com/@JosephJnk/an-introduction-to-applicative-functors-aea966799b1d) post. All contents of the `src` directory are placed into the public domain under the [CC0 license](https://creativecommons.org/share-your-work/public-domain/cc0/).
