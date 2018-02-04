@@ -13,7 +13,6 @@
     "static-land-recursion-schemes": "^1.0.0"
   },
   "author": "Joseph Junker",
-  "license": "MIT",
   "devDependencies": {
     "babel-cli": "^6.24.1",
     "babel-preset-es2015": "^6.24.1",
